@@ -1,89 +1,36 @@
-body {
-  margin: 0;
-  padding: 0;
-}
 
-/* CABEÇA DA PÁGINA */
-
-.header {
+header {
   height: 500px;
   text-align: center;
   background: url('if.jpg') no-repeat;
   background-position: center center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
-.header h3 {
-  margin: auto;
-  font-size: 30px;
-}
-
-h3.textbg {
-  color: black;
+header h3 {
+  display: inline;
   background-color: #ffaf50;
-  background-color: 1.5em;
-  padding: 5px 5px 5px 5px;
 }
-
-/* CONTEÚDO */
 
 .intro {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  padding-left: 10px;
-  padding-right: 10px;
   background-color: #b897f0;
 }
 
-.intro p {
-  padding-left: 20%;
-  padding-right: 20%;
+.intro a {
+  color: black;
 }
-
-.lista a {
-  text-decoration: none;
-  text-decoration: underline;
-  color: inherit;
-}
-
 
 .setores {
-  display: flex;
-  flex-direction: column;
   background-color: #ccc;
 }
 
-.setores h3 {
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.setor-imgs {
-  display: flex;
-  flex-direction: row;
-}
-
 .setor-imgs img {
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   width: 100px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .active {
   background-color: #eee;
-}
-
-.textos {
-  padding-left: 20%;
-  padding-right: 20%;
 }
 
 .hidden {
@@ -91,25 +38,9 @@ h3.textbg {
 }
 
 .areas {
-  display: flex;
-  flex-direction: column;
   background-color: #77dd77;
 }
 
-.areas h3 {
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .gincanas {
-  display: flex;
-  flex-direction: column;
   background-color: #f4c2c2;
-}
-
-.gincanas h3 {
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
 }
