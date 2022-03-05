@@ -102,13 +102,13 @@ h3.textbg {
   margin-right: auto;
 }
 
-.gincana {
+.gincanas {
   display: flex;
   flex-direction: column;
   background-color: #f4c2c2;
 }
 
-.gincana h3 {
+.gincanas h3 {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
