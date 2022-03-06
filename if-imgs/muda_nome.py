@@ -1,12 +1,11 @@
+from PIL import Image
 import os
 
 path = os.getcwd()
 
-i = 0
-for file in os.listdir(path):
-    if file[-2:] != 'py':
-        i+=1
+l, t, r, b = 0, 26, 1008, 731
 
-        nome = "img" + str(i) + ".png"
-        print(nome)
-        os.rename(file, nome)
+for i in range(1,28):
+    im = Image.open(f"{os.getcwd()}\\img{i}.png")
+    im1 = im.crop((l, t, r, b))
+    im1.save(f"img{i}.png")
