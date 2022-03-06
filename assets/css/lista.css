@@ -1,0 +1,64 @@
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    background: #fcfcfc;
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+ol.instrucoes {
+    background: none;
+    padding: 0rem;
+}
+ol.instrucoes>li {
+    border-bottom: 0px;
+    background: #fcfcfc;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border-bottom: 0px;
+    box-shadow: 0 5px 20px 0 rgb(69 67 96 / 5%);
+}
+ol.instrucoes>li::before {
+    background: orange;
+    color: #fff;
+}
+ol>li {
+    counter-increment: my-awesome-counter;
+    display: flex;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px dotted #f0f0f0;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1rem;
+}
+ol>li p {
+    margin-bottom: 0rem;
+    line-height: 1.2;
+}
+ol>li:hover {
+    opacity: 0.9;
+    transition: 0.5s;
+}
+ol>li::before {
+    content: counter(my-awesome-counter);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    line-height: 1;
+    background: #0fb9b1;
+    border-radius: 2rem;
+    padding: 0;
+    padding-top: 0.6rem;
+    min-width: 2.2rem;
+    min-height: 2.2rem;
+    text-align: center;
+    vertical-align: middle;
+}
